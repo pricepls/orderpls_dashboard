@@ -23,7 +23,7 @@ var orderpls = angular.module('OrderplsApplication',
             templateUrl : 'views/home.html',
             controller  : 'homeController'
         })
-        .when('/settings',{
+        .when('/account',{
             templateUrl:'views/account.html',
             controller:'accountController'
         })

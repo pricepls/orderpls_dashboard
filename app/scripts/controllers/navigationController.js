@@ -6,19 +6,19 @@ orderpls.controller('NavigationController',['$scope',function($scope){
             label: 'Dashboard',
             iconClasses: 'ti ti-home',
             html: '',
-            url: '/home'
+            url: '#/home'
         },
         {
             label: 'Reports',
             iconClasses: 'ti ti-pie-chart',
             html: '',
-            url: '/sales',
+            url: '#/sales',
         },
         {
             label: 'Orders',
             iconClasses: 'ti ti-shopping-cart-full',
             html: '',
-            url: '/orders'
+            url: '#/orders'
         },
         {
             label: 'Menu',
@@ -26,39 +26,39 @@ orderpls.controller('NavigationController',['$scope',function($scope){
             html: '',
             children: [{
                 label: 'Courses',
-                url: '/menu_courses',
+                url: '#/menu_courses',
             }, {
                 label: 'Sub Courses',
-                url: '/menu_sub_courses'
+                url: '#/menu_sub_courses'
             }, {
                 label: 'Food types',
-                url: '/menu_food_types'
+                url: '#/menu_food_types'
             }]
         },
         {
             label: 'Staffs',
             iconClasses: 'ti ti-face-smile',
             html: '',
-            url: '/staffs',
+            url: '#/staffs',
 
         },
         {
             label: 'Tables',
             iconClasses: 'ti ti-layout-grid3',
             html: '',
-            url: '/tables'
+            url: '#/tables'
         },
         {
             label: 'Payments',
             iconClasses: 'ti ti-money',
             html: '',
-            url: '/payments'
+            url: '#/payments'
         },
         {
             label: 'Account',
             iconClasses: 'ti ti-settings',
             html: '',
-            url: '/settings'
+            url: '#/account'
         }
     ]
 

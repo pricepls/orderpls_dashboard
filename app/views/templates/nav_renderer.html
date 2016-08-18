@@ -3,7 +3,7 @@
     <i ng-if="item.iconClasses" class="{{item.iconClasses}}"></i><span>{{item.label}}</span>
     <span ng-bind-html="item.html"></span>
 </a>
-<ul ng-if="item.children.length" >
+<ul ng-if="item.showNowChildren" style="display: block"  ng-if="item.children.length" >
     <li ng-repeat="item in item.children"
         ng-class="{ hasChild: (item.children!==undefined),
                       active: item.selected,

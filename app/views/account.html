@@ -1,0 +1,242 @@
+<ng-include src="'views/header.html'" class="navbar-fixed-top"></ng-include>
+<div id="wrapper">
+
+
+  <div id="layout-static">
+    <div class="static-sidebar-wrapper sidebar-default">
+      <ng-include src="'views/templates/side_panel.html'"></ng-include>
+    </div>
+
+    <div class="static-content-wrapper">
+      <div class="static-content">
+        <div class="page-content" class="mainview-animation animated">
+
+          <ol class="breadcrumb">
+            <li><a href="#/home">Dashboard</a></li>
+            <li class="active">Account Settings</li>
+          </ol>
+
+
+          <div class="container-fluid">
+            <div data-widget-group="group1" ng-init="selectedTab='0'">
+              <div class="row">
+
+                <div class="col-sm-3">
+                  <div class="panel panel-profile">
+                    <div class="panel-body">
+                      <img masked-image src="images/yeoman.png" alt="..." class="img-circle">
+
+                      <div class="name">Jessy Group</div>
+                      <!--<div class="info">Graphic Designer</div>-->
+
+                    </div>
+                  </div>
+                  <!-- panel -->
+                  <div class="list-group list-group-alternate mb-n nav nav-tabs">
+                    <a href="" ng-click="selectedTab='0'" ng-class="{active: selectedTab=='0'}"
+                       class="list-group-item active"><i class="ti ti-user"></i> About
+                      <!--<span class="badge badge-primary">80%</span>-->
+                    </a>
+                    <a href="" ng-click="selectedTab='2'" ng-class="{active: selectedTab=='2'}" class="list-group-item"><i
+                      class="ti ti-pencil"></i> Edit</a>
+
+                    <a href="" ng-click="selectedTab='3'" ng-class="{active: selectedTab=='3'}" class="list-group-item"><i
+                      class="ti ti-lock"></i> Security Settings</a>
+
+                  </div>
+                </div>
+                <!-- col-sm-3 -->
+
+
+                <div class="col-sm-9">
+                  <div class="tab-content">
+
+                    <div class="tab-pane" ng-class="{active: selectedTab=='0'}">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h2>About</h2>
+                        </div>
+                        <div class="panel-body">
+                          <div class="about-area">
+                            <h4>Basic Information</h4>
+                            <div class="table-responsive">
+                              <table class="table">
+                                <tbody>
+
+                                <tr>
+                                  <th>Group Name</th>
+                                  <td>Jessy Bakers</td>
+                                </tr>
+
+                                <tr>
+                                  <th>Phone</th>
+                                  <td>+61 3 8376 6284</td>
+                                </tr>
+
+
+                                <tr>
+                                  <th>Email</th>
+                                  <td><a href="#">doe@lime.com</a></td>
+                                </tr>
+
+
+                                <tr>
+                                  <th>Registered Address</th>
+                                  <td>Jessy Bakers <br> Karukachal <br> Kottayam  <br>Kerala  <br>India</td>
+                                </tr>
+
+                                <tr>
+                                  <th>Web</th>
+                                  <td><a href="#">www.johndoe.com</a></td>
+                                </tr>
+
+                                <tr>
+                                  <th>Joined on</th>
+                                  <td>19 April 2016</td>
+                                </tr>
+
+
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" ng-class="{active: selectedTab=='2'}">
+                      <div class="panel">
+                        <div class="panel-heading">
+                          <h2>Edit</h2>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <form class="form-horizontal tabular-form">
+                                <div class="form-group">
+                                  <label for="form-name" class="col-sm-2 control-label">Group Name</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="text" class="form-control" id="form-name" placeholder="Group Name">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="form-website" class="col-sm-2 control-label">Phone</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="text" class="form-control" id="form-website" placeholder="Phone">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="form-website" class="col-sm-2 control-label">Email</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="text" class="form-control" id="form-website" placeholder="@">
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <label for="form-website" class="col-sm-2 control-label">Website</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="text" class="form-control" id="form-website" placeholder="http://">
+                                  </div>
+                                </div>
+
+                               <!-- <div class="form-group">
+                                  <label for="form-password" class="col-sm-2 control-label">Password</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="password" class="form-control" id="form-password" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="form-confirmpass" class="col-sm-2 control-label">Confrim Password</label>
+                                  <div class="col-sm-8 tabular-border">
+                                    <input type="password" class="form-control" id="form-confirmpass" placeholder="Password">
+                                  </div>
+                                </div>-->
+
+
+                                <div class="form-group">
+                                  <label class="col-sm-2 control-label">Address</label>
+                                  <div class="col-sm-8">
+                                    <textarea class="form-control fullscreen"></textarea>
+                                  </div>
+                                </div>
+
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel-footer">
+                          <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                              <button class="btn-primary btn">Save</button>
+                              <button class="btn-default btn">Reset</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane" ng-class="{active: selectedTab=='3'}">
+                      <div class="panel">
+                        <div class="panel-heading">
+                          <h2>Security Settings</h2>
+                        </div>
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <form class="form-horizontal tabular-form">
+
+                                 <div class="form-group">
+                                   <label for="form-password" class="col-sm-2 control-label">Password</label>
+                                   <div class="col-sm-8 tabular-border">
+                                     <input type="password" class="form-control" id="form-password" placeholder="Password">
+                                   </div>
+                                 </div>
+                                 <div class="form-group">
+                                   <label for="form-confirmpass" class="col-sm-2 control-label">Confrim Password</label>
+                                   <div class="col-sm-8 tabular-border">
+                                     <input type="password" class="form-control" id="form-confirmpass" placeholder="Password">
+                                   </div>
+                                 </div>
+
+
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel-footer">
+                          <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                              <button class="btn-primary btn">Save</button>
+                              <button class="btn-default btn">Reset</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+      <ng-include src="'views/templates/footer_panel.html'"></ng-include>
+
+    </div>
+
+
+  </div>
+
+
+</div>
+
+
